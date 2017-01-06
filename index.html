@@ -1,6 +1,5 @@
 <title>Home</title>
 <html>
-  <div id="circle"></div>
     <body>
       <center><h1>Welcome</h1></center>
       <center><p>Welcome to https://kingxan.github.io/Website/</p></center>
@@ -10,12 +9,38 @@
       <a href="http://websdr.ewi.utwente.nl:8901/">Short Wave Radio</a>
         <br>
       <a href="https://ifunny.co/">Ifunny</a>
+        <br>
+        <a href="https://kg03.github.io/Website/">KG03's Website</a><!--What a noob-->
+        <br>
       </ls>
-      <h3>Toutrials</h3>
+      <h3>Tutorials</h3>
+      
+      <p>Lorem ipsum...</p>
+<div>
+    <a href="#" class="hide" data-toggle="#list">Toggle: show</a>
+    <ol id="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+</div>
+
+<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+      
+      
      
     </body>
 <!-- This is the CSS -->
 <style>
+      #list {
+      display: none;
+    }
+    
+    #list.open {
+      display: block;  
+    }
+
+@media print { .hide, .show { display: none; } }
   body {
      background-color: lightblue;
   }
@@ -23,11 +48,32 @@
  <!-- This is the end CSS -->
   <!-- This is start of JS -->
   <script>
+    $(function(){
+ 
+    $('[data-toggle]').on('click', function(){
+      var id = $(this).data("toggle"),
+          $object = $(id),
+          className = "open";
+      
+      if ($object) {
+        if ($object.hasClass(className)) {
+          $object.removeClass(className)
+          $(this).text("Toggle: show");
+        } else {
+          $object.addClass(className)
+          $(this).text("Toggle: hide");
+        }
+    
+    
+    
 var age = prompt ("What is your age ?");
 
 if (age >= 13)
 {
-alert("You may enter")
+alert("You 
+      
+      
+      may enter")
 }
 else
 {
